@@ -1,20 +1,20 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image'
+import styles from './page.module.css'
 import {
-    Badge,
-    Box,
-    Center,
-    Flex,
-    HStack,
-    Stack,
-    VStack,
-    Card,
-    For,
-    Heading,
-    Input,
-    Spacer,
-    Text
-} from "@chakra-ui/react";
+  Badge,
+  Box,
+  Center,
+  Flex,
+  HStack,
+  Stack,
+  VStack,
+  Card,
+  For,
+  Heading,
+  Input,
+  Spacer,
+  Text
+} from '@chakra-ui/react'
 
 import { Button } from '@/components/ui/button'
 import { Avatar } from '@/components/ui/avatar'
@@ -79,7 +79,7 @@ export default function Home () {
             <Card.Body />
             <Card.Footer />
           </Card.Root>
-          
+
           <Assignments />
         </Flex>
       </Box>
