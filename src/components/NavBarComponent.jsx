@@ -13,6 +13,7 @@ import {
 import {BreadcrumbCurrentLink, BreadcrumbRoot} from "@/components/ui/breadcrumb";
 import {SlGlobe, SlSettings} from "react-icons/sl";
 import {SlUser} from "react-icons/sl";
+import {Avatar} from "@/components/ui/avatar";
 
 export default function NavBarComponent() {
     const {isOpen, onOpen, onClose} = useDisclosure();
@@ -22,26 +23,23 @@ export default function NavBarComponent() {
             as="header"
             align="center"
             justify="space-between"
-            mb={4}
+            height={"85px"}
             bg="white" // Cambiado a blanco
-            p={2}
         >
             <BreadcrumbRoot ml={"20px"}>
-                <BreadcrumbLink color={"gray.400"}>Orders</BreadcrumbLink>
-                <BreadcrumbLink>Orders</BreadcrumbLink>
+                <BreadcrumbLink color={"#718096"}>Orders</BreadcrumbLink>
+                <BreadcrumbLink color={"#2D3748"} fontWeight={"400"}>Orders</BreadcrumbLink>
             </BreadcrumbRoot>
 
-            <Box display={{base: 'none', md: 'block'}}>
-                <HStack spacing={"4"}>
-                    <IconButton color={"blue.300"} aria-label="Call support" variant={"subtle"} rounded="full">
+            <Box mr={"20px"} display={{base: 'none', md: 'block'}}>
+                <HStack gap={"10px"}>
+                    <IconButton color={"#68CCE0"} aria-label="Call support" variant={"subtle"} rounded="full">
                         <SlGlobe/>
                     </IconButton>
-                    <IconButton color={"purple"} aria-label="Call support" variant={"subtle"} rounded="full">
+                    <IconButton color={"#718EBF"}  aria-label="Call support" variant={"subtle"} rounded="full">
                         <SlSettings/>
                     </IconButton>
-                    <IconButton color={"blue.200"} aria-label="Call support" variant={"subtle"} rounded="full">
-                        <SlUser/>
-                    </IconButton>
+                    <Avatar ml={'10px'} name="Oshigaki Kisame" src="images/avatar.png" />
                 </HStack>
 
             </Box>
