@@ -2,7 +2,7 @@
 import * as React from 'react';
 
 import AcordeonButtonsComponent from "@/components/AcordeonButtonsComponent";
-import {Box, Flex, Heading, HStack, Icon, Text, VStack} from "@chakra-ui/react";
+import {Box, Flex, Heading, HStack, Icon, Separator, Text, VStack} from "@chakra-ui/react";
 import {MdGridView, MdMenu} from "react-icons/md";
 import {SlGlobe, SlSettings} from "react-icons/sl";
 import {LuBell, LuBookOpen, LuFileText, LuImage, LuServer} from "react-icons/lu";
@@ -46,10 +46,10 @@ export default function MySideBar() {
 
 
                 {/* Separador */}
-
+                <Separator my={"20px"} />
 
                 {/* 2do Título del sidebar */}
-                <Heading mt={50} color={"gray.500"} size="md">Nomenclators</Heading>
+                <Heading color={"gray.500"} size="md">Nomenclators</Heading>
 
                 {/*<AcordeonButtonComponent/>*/}
                 <AcordeonButtonsComponent/>

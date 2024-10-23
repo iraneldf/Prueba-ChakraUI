@@ -9,9 +9,7 @@ import {
 
 export default function AcordeonButtonsComponent() {
     const items = [
-        {value: "a", title: "First Item", text: 'asdasd'},
-        {value: "a", title: "First Item", text: 'asdasd'},
-        {value: "a", title: "First Item", text: 'asdasd'},
+        {value: "a", title: "Client", text: 'asdasd'},
     ];
 
     return (
@@ -24,11 +22,6 @@ export default function AcordeonButtonsComponent() {
                             {item.title}
                         </AccordionItemTrigger>
 
-                        <AbsoluteCenter axis="vertical" insetEnd="0">
-                            <Button variant="subtle" colorPalette="blue">
-                                Action
-                            </Button>
-                        </AbsoluteCenter>
                     </Box>
                     <AccordionItemContent>{item.text}</AccordionItemContent>
                 </AccordionItem>
